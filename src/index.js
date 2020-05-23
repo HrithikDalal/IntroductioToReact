@@ -9,8 +9,8 @@ import ReactDOM from "react-dom";
 const fname = "Hrithik";
 const lname = "Dalal";
 const num = 7;
-const currDate = new Date();
-const currYear = currDate.getFullYear();
+const date = new Date();
+const currYear = date.getFullYear();
 const img = "https://picsum.photos/200";
 
 const customStyle = {
@@ -19,9 +19,35 @@ const customStyle = {
   border: "1px dashed black"
 };
 
+// Project1
+const currentTime = date.getHours();
+
+let greeting;
+
+const customStyle1 = {
+  color: ""
+};
+
+if (currentTime < 12) {
+  greeting = "Good Morning";
+  customStyle.color = "red";
+} else if (currentTime < 18) {
+  greeting = "Good Afternoon";
+  customStyle.color = "green";
+} else {
+  greeting = "Good Night";
+  customStyle.color = "blue";
+}
+// End Project1
+
 ReactDOM.render(
   <div>
     {/* <h1 class="heading">Hello name</h1> */}
+    {/* Project1 */}
+    <h1 className="heading" style={customStyle}>
+      Good {greeting}
+    </h1>
+    {/* End Project 1 */}
     <h1 className="heading">Hello {fname + " " + lname}</h1>
     <h1 contentEditable="true" spellCheck="false">
       Hello {fname} {lname}
@@ -57,8 +83,8 @@ ReactDOM.render(
     </div>
 
     <p>Created by {fname + " " + lname}</p>
-    <p>Created by {currYear}</p>
-    <p>Created by {currDate.getFullYear()}</p>
+    <p>Created In {currYear}</p>
+    <p>Created On {date.getFullYear()}</p>
   </div>,
   document.getElementById("root")
 );
