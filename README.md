@@ -1,2 +1,0 @@
-# IntroductioToReact
-Created with CodeSandbox
