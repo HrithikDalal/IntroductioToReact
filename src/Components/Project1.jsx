@@ -23,7 +23,7 @@ if (currentTime < 12) {
 function Project1() {
   return (
     <h1 className="heading1" style={customStyle1}>
-      {greeting} {date.getUTCHours()}:{date.getUTCMinutes()}
+      {greeting} {date.getHours()}:{date.getMinutes()}
     </h1>
   );
 }
