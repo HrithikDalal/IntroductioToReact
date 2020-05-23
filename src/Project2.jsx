@@ -1,12 +1,13 @@
 import React from "react";
-import Pi, { doublePi, triplePi } from "./mathss";
+import pi, { doublePi, triplePi } from "./math.js";
 
 function Project2() {
   return (
     <ul>
-      <li>{Pi}</li>
+      <li>{pi}</li>
       <li>{doublePi()}</li>
       <li>{triplePi()}</li>
+i()}</li>
     </ul>
   );
 }
