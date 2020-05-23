@@ -4,6 +4,7 @@ import Project1 from "./Project1";
 import List from "./List";
 import Images from "./Images";
 import Footer from "./Footer";
+import Project2 from "./Project2";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Heading />
       <List />
       <Images />
+      <Project2 />
       <Footer />
     </div>
   );
